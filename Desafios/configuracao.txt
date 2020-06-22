@@ -1,0 +1,27 @@
+// Criar solution 
+dotnet new sln -n Desafios
+
+// Criar biblioteca
+dotnet new classlib -o DesafiosLib
+
+// Adicionar biblioteca a solution
+dotnet sln add DesafiosLib/DesafiosLib.csproj
+
+// Criar projecto de testes
+dotnet new xunit -o DesafiosUnitTest
+
+// Adicionar testes a solution
+dotnet sln add DesafiosUnitTest/DesafiosUnitTest.csproj
+
+// Adicionar biblioteca ao projecto de testes
+dotnet add DesafiosUnitTest/DesafiosUnitTest.csproj reference DesafiosLib/DesafiosLib.csproj
+
+// Adicionar namespace da biblioteca ao teste
+using DesafiosLib;
+
+// Correr testes
+dotnet test
+
+// Correr apenas um teste
+dotnet test --filter DisplayName={{namespace do projecto de testes}}.{{classe de testes}}.{{teste}}
+dotnet test --filter DisplayName=Desafio5Test.UnitTest1.Test1
