@@ -4,4 +4,8 @@ dotnet add package Microsoft.Data.Sqlite
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
 
+
+
+
+
 // https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
