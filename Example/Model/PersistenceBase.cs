@@ -1,11 +1,10 @@
 using System.Collections.Generic;
-using ExampleClass.Model;
 
-namespace ExampleClass.Persistence {
+namespace ExampleClass.Model {
     public abstract class PersistenceBase<T> : PersistenceCRUDInterface<T> where T : Person {
-        public abstract void Add (T customer);
+        public abstract void Add (T entity);
 
-        public abstract void Remove (T customer);
+        public abstract void Remove (T entity);
 
         public abstract void RemoveByName (string name);
 

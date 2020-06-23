@@ -1,5 +1,4 @@
 using ExampleClass.Model;
-using ExampleClass.Persistence;
 using ExampleClass.Persistence.List;
 
 namespace ExampleClass.Business {

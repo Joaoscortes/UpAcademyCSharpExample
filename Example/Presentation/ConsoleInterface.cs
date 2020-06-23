@@ -1,7 +1,6 @@
 using System;
 using ExampleClass.Business;
 using ExampleClass.Model;
-using ExampleClass.Persistence;
 
 namespace ExampleClass.Presentation {
     public class ConsoleInterface {

@@ -1,7 +1,5 @@
 using ExampleClass.Business;
 using ExampleClass.Model;
-using ExampleClass.Persistence;
-using ExampleClass.Persistence.List;
 
 namespace ExampleClass.Presentation {
     public class CustomerMenu : CRUDMenu<Customer, CustomerBusiness, PersistenceBase<Customer>> {

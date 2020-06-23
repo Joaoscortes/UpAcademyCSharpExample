@@ -1,4 +1,3 @@
-using System;
 using ExampleClass.Model;
 
 namespace ExampleClass.Persistence.List {

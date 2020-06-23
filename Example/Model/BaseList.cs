@@ -1,8 +1,7 @@
 using System;
 using System.Collections.Generic;
-using ExampleClass.Model;
 
-namespace ExampleClass.Persistence.List {
+namespace ExampleClass.Model {
 
     public abstract class BaseList<T> : PersistenceBase<T> where T : Person {
         private List<T> db = new List<T> ();

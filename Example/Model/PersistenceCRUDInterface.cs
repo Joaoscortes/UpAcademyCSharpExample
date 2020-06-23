@@ -1,7 +1,6 @@
 using System.Collections.Generic;
-using ExampleClass.Model;
 
-namespace ExampleClass.Persistence {
+namespace ExampleClass.Model {
     public interface PersistenceCRUDInterface<T> where T : Person {
         public void Add (T obj);
 

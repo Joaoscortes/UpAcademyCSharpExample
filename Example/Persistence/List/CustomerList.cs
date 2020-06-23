@@ -1,4 +1,3 @@
-using System;
 using ExampleClass.Model;
 
 // https://csharpindepth.com/articles/singleton

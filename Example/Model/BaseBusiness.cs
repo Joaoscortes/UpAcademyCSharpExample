@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using ExampleClass.Model;
-using ExampleClass.Persistence;
 
-namespace ExampleClass.Business {
+namespace ExampleClass.Model {
     public abstract class BaseBusiness<T, U> where T : Person where U : PersistenceBase<T> {
         protected U database;
 

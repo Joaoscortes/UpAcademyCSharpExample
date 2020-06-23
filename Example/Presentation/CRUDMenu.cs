@@ -1,7 +1,5 @@
 using System;
-using ExampleClass.Business;
 using ExampleClass.Model;
-using ExampleClass.Persistence;
 
 namespace ExampleClass.Presentation {
     public abstract class CRUDMenu<T, U, V> where T : Person where U : BaseBusiness<T, V> where V : PersistenceBase<T> {
