@@ -4,9 +4,9 @@ using ExampleClass.Model;
 namespace ExampleClass.Presentation {
     public class EmployeeMenu : CRUDMenu<Employee, EmployeeBusiness, PersistenceBase<Employee>> {
 
-        public EmployeeMenu () {
+        public EmployeeMenu (string databaseType) {
             this.className = "Employee";
-            business = new EmployeeBusiness ();
+            business = new EmployeeBusiness (databaseType);
         }
 
         public override void AddMenu () {

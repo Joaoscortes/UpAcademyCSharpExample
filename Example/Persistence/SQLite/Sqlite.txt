@@ -3,5 +3,10 @@ dotnet add package Microsoft.Data.Sqlite
 
 dotnet add package Microsoft.EntityFrameworkCore.Sqlite
 
-
+// https://docs.microsoft.com/en-us/aspnet/core/data/ef-rp/complex-data-model?view=aspnetcore-3.1&tabs=visual-studio
+// https://docs.microsoft.com/en-us/ef/core/get-started/?tabs=netcore-cli
 // https://docs.microsoft.com/en-us/ef/core/miscellaneous/cli/powershell
+dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet ef migrations add InitialCreate
+dotnet ef database update

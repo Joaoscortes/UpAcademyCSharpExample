@@ -5,6 +5,7 @@ namespace ExampleClass.Model {
         public string BirthDate { get; set; }
         public string Photo { get; set; }
 
+        public Employee () { }
         public Employee (string titleCourtesy, string birthDate, string photo, string name, string title, Address address, string homePhone) : base (name, title, address, homePhone) {
             TitleCourtesy = titleCourtesy;
             BirthDate = birthDate;

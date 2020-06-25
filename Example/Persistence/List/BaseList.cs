@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 
 namespace ExampleClass.Model {
@@ -12,16 +11,6 @@ namespace ExampleClass.Model {
 
         public override void Remove (T entity) {
             db.Remove (entity);
-        }
-
-        public override void RemoveByName (string name) {
-            //  TODO - List remove by name attr
-            Console.WriteLine ("RemoveByName");
-            // db.Remove (name);
-        }
-
-        public override T FindByName (string name) {
-            return db.Find (entity => entity.Name == name);
         }
 
         public override List<T> GetAll () {

@@ -6,10 +6,6 @@ namespace ExampleClass.Model {
 
         public List<T> GetAll ();
 
-        public T FindByName (string name);
-
-        // public T updateByName (string name, T obj);
-
         public void Remove (T obj);
     }
 }

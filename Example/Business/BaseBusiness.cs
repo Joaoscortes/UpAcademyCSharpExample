@@ -12,14 +12,6 @@ namespace ExampleClass.Model {
             database.Remove (entity);
         }
 
-        public void RemoveByName (string name) {
-            database.RemoveByName (name);
-        }
-
-        public T FindByName (string name) {
-            return database.FindByName (name);
-        }
-
         public List<T> GetAll () {
             return database.GetAll ();
         }
