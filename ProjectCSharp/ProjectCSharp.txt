@@ -1,0 +1,22 @@
+# dotnet new "templates"
+https://dotnetnew.azurewebsites.net/
+
+
+# vue.js in dotnet new
+dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+dotnet new vue
+
+
+# Tools
+dotnet tool install --global dotnet-ef
+dotnet tool install --global dotnet-aspnet-codegenerator
+    
+
+# Generate MVC from DB
+dotnet new mvc
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+
+dotnet-ef dbcontext scaffold --context-dir Data --context "ApplicationDbContext" "DataSource=db/customers.db" Microsoft.EntityFrameworkCore.Sqlite --output-dir Models --force
+dotnet-aspnet-codegenerator controller --controllerName CustomersController --model Customers -outDir "Controllers" --dataContext "ApplicationDbContext" -sqlite

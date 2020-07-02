@@ -1,0 +1,27 @@
+https://localhost:5001/swagger
+
+// dotnet add package Swashbuckle.AspNetCore
+
+using Swashbuckle.AspNetCore.Swagger;
+using Swashbuckle.AspNetCore.SwaggerUI;
+using Microsoft.OpenApi.Models;
+
+>> ConfigureServices
+// ---- SWAGGER
+services.AddSwaggerGen(options => 
+{
+	options.SwaggerDoc("v1", new OpenApiInfo {
+		Title = "Calculator API",
+		Version = "v1"
+	});
+});
+// -----------
+
+>> Configure					
+// ---- SWAGGER
+app.UseSwagger();
+app.UseSwaggerUI(options => {
+	options.SwaggerEndpoint("/swagger/v1/swagger.json", "Calculator API v1");
+	options.SupportedSubmitMethods(new[] { SubmitMethod.Get } );
+});
+// 

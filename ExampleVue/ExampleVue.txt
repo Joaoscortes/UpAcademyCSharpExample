@@ -1,0 +1,8 @@
+// Templates 
+dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+
+// Init Vue
+dotnet new vue -o ExampleVue
+cd ExampleVue/
+npm install
+dotnet run
