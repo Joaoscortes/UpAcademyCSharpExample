@@ -7,7 +7,7 @@ namespace DynamicTest {
 
       person.Name = "Ellen";
       person.Email = "Adams";
-      person.Contact = 919539647;
+      person.Contact = 987654321;
 
       Console.WriteLine (person.Name + " " + person.Email + " " + person.Contact);
 
